@@ -127,7 +127,7 @@ header .to-top > .line2{
   font-size: 35px;
   text-transform: var(--uppercase);
   letter-spacing:0.1em;
-  background: -webkit-linear-gradient(to left, rgba(235, 53, 53, 1),rgba(130, 206, 128, 0.8),rgba(255, 255, 255, 0.8));
+  background: -webkit-gradient(to left, rgba(235, 53, 53, 1),rgba(130, 206, 128, 0.8),rgba(255, 255, 255, 0.8));
   background:linear-gradient(to bottom left , rgba(235, 53, 53, 1),rgba(130, 206, 128, 0.8),rgba(255, 255, 255, 0.8));
   display: inline;
   -webkit-background-clip: text;
