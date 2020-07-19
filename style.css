@@ -116,12 +116,12 @@ body{
 
 .landing-page::before,.landing-page::after{
   content: '';
-  cursor: pointer;
   display: block;
   position: absolute;
   bottom: 0;
   width: 26.5px;
   height: 2.5px;
+  cursor: pointer;
   background: #d9cdcd;
   transform: translateX(20px) rotate(-35deg);
   box-shadow: 0 0 10px #fff;
@@ -590,10 +590,10 @@ footer p{
 
 @media screen and (min-width: 768px){
   .landing-page {
-    height: 60vh;
+    height: 65vh;
   }
   .landing-page::before, .landing-page::after{
-    top:45% ;
+    bottom:20%;
   }
   .landing-page > h1{
     font-size: 60px;
@@ -604,15 +604,15 @@ footer p{
 
   @keyframes shadow {
     0%{
-      top: 45%;
+      bottom: 15%;
       box-shadow: 0 0 20px 2px#fff;
     }
     50%{
-      top: 50%;
+      bottom: 20%;
       box-shadow: 0 0 0 0 #fff;
     }
     100%{
-      top: 45%;
+      bottom: 15%;
       box-shadow: 0 0 20px 2px#fff;
     }
   }
@@ -730,12 +730,19 @@ footer p{
 }
 
 @media screen and (min-width: 1200px) {
+  .landing-page{
+    height: 100vh;
+  }
   .landing-page h1{
     font-size: 60px;
   }
   .landing-page p{
     font-size: 19px;
   }
+  .landing-page::before, .landing-page::after{
+    bottom: 0;
+  }
+
   .about{
     display: grid;
     grid-template-columns: repeat(3, 300px);
