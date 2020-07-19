@@ -27,40 +27,7 @@ body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-/* header{
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  z-index: 10;
-} */
-
-header .menus{
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #732125;
-  transform: translateX(100%);
-  transition: all 500ms ease-in-out;
-}
-
-header .menus > a{
-  text-decoration: none;
-  text-transform: var(--uppercase);
-  color: var(--white);
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
-header .menus > a:nth-of-type(5){
-  margin-bottom: 0;
-}
-
-header .to-top{
+.to-top{
   display: none;
   position: fixed;
   right: 50px;
@@ -75,7 +42,7 @@ header .to-top{
   animation: Topshadow 3s ease-in-out 1s infinite ;
 }
 
-header .to-top > .line{
+.to-top > .line{
   position: absolute;
   height: 2px;
   width: 20px;
@@ -84,11 +51,11 @@ header .to-top > .line{
   left: 11.1px;
 }
 
-header .to-top > .line1{
+.to-top > .line1{
   transform:  translateX(50%) rotate(45deg);
 }
 
-header .to-top > .line2{
+.to-top > .line2{
   transform: translateX(-3px) rotate(-45deg);
 }
 
@@ -616,11 +583,86 @@ footer p{
   text-transform: var(--uppercase);
   letter-spacing: 0.1em;
   color: #b5a6a6;
+
+}
+
+@media screen and (min-width: 768px){
+  .landing-page {
+    height: 60vh;
+  }
+  .landing-page::before, .landing-page::after{
+    top:45% ;
+  }
+  .landing-page > h1{
+    font-size: 60px;
+  }
+  .landing-page > p{
+    font-size: 22px;
+  }
+
+  @keyframes shadow {
+    0%{
+      top: 45%;
+      box-shadow: 0 0 20px 2px#fff;
+    }
+    50%{
+      top: 50%;
+      box-shadow: 0 0 0 0 #fff;
+    }
+    100%{
+      top: 45%;
+      box-shadow: 0 0 20px 2px#fff;
+    }
+  }
+
+  .about{
+    height: 100vh;
+  }
+  .about > img {
+    width: 400px;
+    height: 400px;
+  }
+  .about > .about-text > p {
+    font-size: 85px;
+  }
+  .about > .about-text > p > span:nth-of-type(2){
+    font-size: 45px;
+  }
+  .about .desc{
+    width: 600px;
+    font-size: 35px;
+    letter-spacing: 0.1em;
+  }
+  .about > .social-icons > img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .services{
+    height: 120vh;
+  }
+  .services .services-titles > h1{
+    font-size: 60px;
+  }
+  .services .services-titles > h4{
+    font-size: 28px;
+  }
+  .services .services-content{
+    margin-top: 40px;
+    height: 1200px;
+  }
+  .services > .services-content > .content2{
+    margin-bottom:150px;
+  }
+
+  .portfolios{
+    height: 100vh !important;
+  }
 }
 
 @media screen and (min-width:900px) and (max-width: 1199px) {
   .portfolios{
-    height: 200vh;
+    height:150vh !important;
   }
 
   .portfolios .pt-contents{
@@ -680,11 +722,12 @@ footer p{
     font-size: 15px;
   }
 
-
-
 }
 
 @media screen and (min-width: 1200px) {
+  .landing-page{
+    height: 100vh;
+  }
   .landing-page h1{
     font-size: 60px;
   }

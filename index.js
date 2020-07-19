@@ -10,7 +10,7 @@
 let btnTop = document.querySelector('.to-top');
 
 window.addEventListener('scroll',() => {
-  if (window.scrollY > 800) {
+  if (window.scrollY > 300) {
     btnTop.style.display = "block";
     btnTop.style.transition = "display 500ms linear";
   }
