@@ -27,6 +27,7 @@ body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .to-top{
   display: none;
   position: fixed;
@@ -85,8 +86,9 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
   width:100%;
+  position: relative;
 }
 
 .landing-page h1{
@@ -117,7 +119,7 @@ body{
   cursor: pointer;
   display: block;
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   width: 26.5px;
   height: 2.5px;
   background: #d9cdcd;
@@ -560,7 +562,6 @@ body{
   text-align: center;
   color: #fff;
   left: 20%;
-  /* bottom: 90px; */
   top: 70%;
   width:120px;
   height: 50px;
