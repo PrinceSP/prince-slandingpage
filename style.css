@@ -588,12 +588,11 @@ footer p{
 
 }
 
-@media screen and (max-width: 500px){
+/* @media screen and (max-width: 450px){
   .landing-page{
-    height: 50vh;
-    background: red;
+    height: 70vh;
   }
-}
+} */
 
 @media screen and (min-width: 768px){
   .landing-page {
