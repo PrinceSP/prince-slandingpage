@@ -592,6 +592,9 @@ footer p{
   .landing-page{
     height: 100vh;
   }
+  .about{
+    height: 150vh;
+  }
 }
 
 @media screen and (min-width: 768px){
