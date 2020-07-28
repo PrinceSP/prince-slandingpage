@@ -590,7 +590,8 @@ footer p{
 
 @media screen and (max-width: 500px){
   .landing-page{
-    height: 90vh;
+    height: 50vh;
+    background: red;
   }
 }
 
