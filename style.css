@@ -588,6 +588,12 @@ footer p{
 
 }
 
+@media only screen and (max-width: 400px){
+  .landing-page h1{
+    font-size: 60px;
+  }
+}
+
 @media screen and (min-width: 768px){
   .landing-page {
     height: 65vh;
