@@ -588,7 +588,7 @@ footer p{
 
 }
 
-@media all and (max-width: 500px){
+@media screen and (max-width: 500px){
   .landing-page{
     height: 100vh;
   }
