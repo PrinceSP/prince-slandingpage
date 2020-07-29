@@ -674,7 +674,7 @@ footer p{
 
 @media screen and (min-width:900px) and (max-width: 1199px) {
   .to-top{
-    right: 8%;
+    right: 5%;
   }
   .portfolios{
     height:150vh;
@@ -741,9 +741,9 @@ footer p{
 
 @media screen and (min-width: 1200px) {
   .to-top{
-    right: 8%;
+    right: 5%;
   }
-  
+
   .landing-page{
     height: 100vh;
   }
