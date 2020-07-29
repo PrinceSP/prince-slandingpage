@@ -1,13 +1,5 @@
-// let burger = document.querySelector('.burger');
-// let navigation = document.querySelector('.menus');
-//
-// burger.addEventListener('click', () => {
-//   navigation.classList.toggle('nav-on');
-//   console.log(navigation);
-// });
-
-
 let btnTop = document.querySelector('.to-top');
+let imagesBTN = document.querySelector('.social-icons').children;
 
 window.addEventListener('scroll',() => {
   if (window.scrollY > 300) {
@@ -23,3 +15,18 @@ window.addEventListener('scroll',() => {
 btnTop.addEventListener('click', () => {
   window.scrollTo(0,0);
 });
+
+let imgClicked = ()=>{
+  for (var i = 0; i < imagesBTN.length; i++) {
+    imagesBTN[0].addEventListener('click',()=>{
+      window.location.href = "https://prince-studio.slack.com/ssb/redirect";
+    });
+    imagesBTN[1].addEventListener('click',(item)=>{
+      window.location.href = "https://www.linkedin.com/in/prince-siachin-pasombaran-380426175/";
+    });
+    imagesBTN[2].addEventListener('click',(item)=>{
+      window.location.href = "https://github.com/PrinceSP";
+    });
+  }
+};
+imgClicked();
